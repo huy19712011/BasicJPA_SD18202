@@ -8,6 +8,7 @@ public class BasicJpaSd18202Application {
 
     public static void main(String[] args) {
         SpringApplication.run(BasicJpaSd18202Application.class, args);
+        System.out.println("running...");
     }
 
 }

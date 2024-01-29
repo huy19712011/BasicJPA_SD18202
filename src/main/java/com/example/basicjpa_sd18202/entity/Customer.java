@@ -59,7 +59,7 @@ public class Customer {
         return "Customer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", address=" + address +
+//                ", address=" + getAddress() +
                 '}';
     }
 }

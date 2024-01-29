@@ -57,7 +57,7 @@ public class ShippingAddress {
         return "ShippingAddress{" +
                 "id=" + id +
                 ", city='" + city + '\'' +
-                ", customer=" + customer +
+//                ", customer=" + getCustomer() +
                 '}';
     }
 }

@@ -1,20 +1,20 @@
 package com.example.basicjpa_sd18202.repository;
 
-import com.example.basicjpa_sd18202.entity.Customer;
+
+import com.example.basicjpa_sd18202.entity.ShippingAddress;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
 @Transactional
-public class CustomerRepository {
+public class ShippingAdressRepository {
 
-    @Autowired
+    @PersistenceContext
     private EntityManager entityManager;
 
-    public Customer findById(long id) {
-        return entityManager.find(Customer.class, id);
+    public ShippingAddress findById(long id) {
+        return entityManager.find(ShippingAddress.class, id);
     }
 }
